@@ -1,4 +1,4 @@
-# the-vinyl-exchange
+# the vinyl exchange
 
 # Overview
 
