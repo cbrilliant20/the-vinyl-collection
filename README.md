@@ -21,7 +21,7 @@ const Product = new Schema(
     album: { type: String, required: true, },
     genre: { type: String, required: true, },
     year: { type: Number, required: true, },
-    price: { type: number, required: true, },
+    price: { type: Number, required: true, },
     imgURL: { type: String, required: true, },
   },
   { timestamps: true }
