@@ -6,6 +6,27 @@ The Vinyl Exchange is a social marketplace to buy and sell new and old records. 
 
 # Schema
 
+const User = new Schema(
+  {
+    username: { type: String, required: true, },
+    email: { type: String, required: true },
+    password_digest: { type: String, required: true, select: false },
+  },
+  { timestamps: true }
+)
+
+const Product = new Schema(
+  {
+    artist: { type: String, required: true, },
+    album: { type: String, required: true, },
+    genre: { type: String, required: true, },
+    year: { type: Number, required: true, },
+    price: { type: number, required: true, },
+    imgURL: { type: String, required: true, }
+  },
+  { timestamps: true }
+)
+
 # Wireframe
 
 https://www.figma.com/file/f2bs15tYmvPWujvPsBaxF9/Record-Store?node-id=0%3A1
