@@ -22,7 +22,7 @@ const Product = new Schema(
     genre: { type: String, required: true, },
     year: { type: Number, required: true, },
     price: { type: number, required: true, },
-    imgURL: { type: String, required: true, }
+    imgURL: { type: String, required: true, },
   },
   { timestamps: true }
 )
