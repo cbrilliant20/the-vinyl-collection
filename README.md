@@ -1,1 +1,1 @@
-# the-vinyl-collection
+# the-vinyl-exchange
