@@ -29,4 +29,7 @@ https://docs.google.com/document/d/11SqTIc86dd7ZhK9EhQFu-CaBgJgMRBO0DhN6UJfgCpk/
 
 # Post-MVP
 
-1. 
+1. Filter related music options
+2. Create admin level user privledges
+3. Change password option
+4. Comment section
