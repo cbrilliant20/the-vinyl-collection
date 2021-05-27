@@ -15,7 +15,7 @@ const ProductCards = () => {
     fetchProducts()
   }, [])
 
-  const CARDS = products.map((product, index) => (
+  const cards = products.map((product, index) => (
     <ProductCard
       _id={product._id}
       name={product.name}
@@ -26,7 +26,7 @@ const ProductCards = () => {
 
   return (
     <div className="product-cards">
-      <div className="cards">{CARDS}</div>
+      <div className="cards">{cards}</div>
     </div>
   )
 }
