@@ -5,7 +5,7 @@
 The Vinyl Exchange is a social marketplace to buy and sell new and old records.  Created using the MERN stack, T.V.E offers full CRUD capability, user authentication, and a home grown API.  
 
 # Schema
-
+```
 const User = new Schema(
   {
     username: { type: String, required: true, },
@@ -26,7 +26,7 @@ const Product = new Schema(
   },
   { timestamps: true }
 )
-
+```
 # Wireframe
 
 https://www.figma.com/file/f2bs15tYmvPWujvPsBaxF9/Record-Store?node-id=0%3A1
