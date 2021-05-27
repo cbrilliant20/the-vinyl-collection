@@ -1,5 +1,9 @@
 # the-vinyl-exchange
 
+# Overview
+
+The Vinyl Exchange is a social marketplace to buy and sell new and old records.  Created using the MERN stack, T.V.E offers full CRUD capability, user roles, and home grown API.  
+
 # Schema
 
 # Wireframe
@@ -12,7 +16,7 @@ https://whimsical.com/t-v-e-MoyCoTfAZ3VzeW3od5b7Uq
 
 # Team Expectations
 
-# Overview
+
 
 # MVP
 
