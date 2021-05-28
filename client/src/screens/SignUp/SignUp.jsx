@@ -27,7 +27,7 @@ const SignUp = (props) => {
     try {
       const user = await signUp(form)
       setUser(user)
-      history.push("/")
+      history.push("/products")
     } catch (error) {
       console.error(error)
       setForm({

@@ -13,11 +13,12 @@ const ProductCreate = (props) => {
     imgURL: "",
   })
   const [isCreated, setCreated] = useState(false)
+
   const handleChange = (event) => {
-    const { artist, value } = event.target
+    const { name, value } = event.target
     setProduct({
       ...product,
-      [artist]: value,
+      [name]: value,
     })
   }
   const handleSubmit = async (event) => {
@@ -35,6 +36,7 @@ const ProductCreate = (props) => {
           className="input-artist"
           placeholder="Artist"
           value={product.artist}
+          type="text"
           name="artist"
           required
           autoFocus
@@ -43,6 +45,7 @@ const ProductCreate = (props) => {
         <input
           className="input-album"
           placeholder="Album"
+          type="text"
           value={product.album}
           name="album"
           required
@@ -51,6 +54,7 @@ const ProductCreate = (props) => {
         <input
           className="input-genre"
           placeholder="Genre"
+          type="text"
           value={product.genre}
           name="genre"
           required
@@ -59,6 +63,7 @@ const ProductCreate = (props) => {
         <input
           className="input-year"
           placeholder="Year"
+          type="text"
           value={product.year}
           name="year"
           required
@@ -67,6 +72,7 @@ const ProductCreate = (props) => {
         <input
           className="input-price"
           placeholder="Price"
+          type="text"
           value={product.price}
           name="price"
           required
@@ -75,6 +81,7 @@ const ProductCreate = (props) => {
         <input
           className="input-image-link"
           placeholder="Image Link"
+          type="text"
           value={product.imgURL}
           name="imgURL"
           required

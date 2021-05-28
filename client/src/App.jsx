@@ -1,7 +1,5 @@
 import "./App.css"
-import ProductCards from "./components/ProductCards/ProductCards"
 import Home from "./screens/Home/Home"
-import ProductCard from "./components/ProductCard/ProductCard"
 import ProductCreate from "./screens/ProductCreate/ProductCreate"
 import ProductEdit from "./screens/ProductEdit/ProductEdit"
 import ProductDetail from "./screens/ProductDetail/ProductDetail"
@@ -31,7 +29,7 @@ function App() {
           <Home user={user} />
         </Route>
         <Route path="/products">
-          <Products />
+          <Products user={user} />
         </Route>
         <Route path="/sign-in">
           <SignIn setUser={setUser} />
