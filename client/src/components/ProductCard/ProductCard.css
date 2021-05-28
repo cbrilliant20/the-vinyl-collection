@@ -1,3 +1,13 @@
+.product-card {
+  width: 100px;
+  margin: 20px;
+  font-size: 10px;
+}
+
 .product-card-image {
-  width: 150px;
+  width: 100px;
+}
+
+.product-card-artist {
+  margin: 0;
 }
