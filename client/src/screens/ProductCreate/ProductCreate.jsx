@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Redirect } from "react-router-dom"
-import { Layout } from "../../components/Layout/Layout"
+import Layout from "../../components/Layout/Layout"
 import { createProduct } from "../../services/products"
 
 const ProductCreate = (props) => {

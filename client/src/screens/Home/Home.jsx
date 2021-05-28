@@ -1,5 +1,6 @@
-import "./Home.css";
-import { Layout, ProductCards } from "../../components";
+import "./Home.css"
+import Layout from "../../components/Layout/Layout"
+import ProductCards from "../../components/ProductCards/ProductCards"
 
 const Home = (props) => {
   return (
@@ -8,7 +9,7 @@ const Home = (props) => {
         <ProductCards />
       </div>
     </Layout>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
