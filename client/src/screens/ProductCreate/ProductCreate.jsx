@@ -1,7 +1,8 @@
-import { useState } from "react"
-import { Redirect } from "react-router-dom"
-import Layout from "../../components/Layout/Layout"
-import { createProduct } from "../../services/products"
+import { useState } from "react";
+import { Redirect } from "react-router-dom";
+import Layout from "../../components/Layout/Layout";
+import { createProduct } from "../../services/products";
+import "./ProductCreate.css";
 
 const ProductCreate = (props) => {
   const [product, setProduct] = useState({
@@ -11,23 +12,23 @@ const ProductCreate = (props) => {
     year: "",
     price: "",
     imgURL: "",
-  })
-  const [isCreated, setCreated] = useState(false)
+  });
+  const [isCreated, setCreated] = useState(false);
 
   const handleChange = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event.target;
     setProduct({
       ...product,
       [name]: value,
-    })
-  }
+    });
+  };
   const handleSubmit = async (event) => {
-    event.preventDefault()
-    const created = await createProduct(product)
-    setCreated({ created })
-  }
+    event.preventDefault();
+    const created = await createProduct(product);
+    setCreated({ created });
+  };
   if (isCreated) {
-    return <Redirect to={`/products`} />
+    return <Redirect to={`/products`} />;
   }
   return (
     <Layout user={props.user}>
@@ -92,6 +93,6 @@ const ProductCreate = (props) => {
         </button>
       </form>
     </Layout>
-  )
-}
-export default ProductCreate
+  );
+};
+export default ProductCreate;
