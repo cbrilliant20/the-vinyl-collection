@@ -1,0 +1,55 @@
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://cdn.thespaces.com/wp-content/uploads/2019/10/Supervinyl49_Benny-Chan-HERO-1024x663.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  z-index: -1;
+}
+
+.home-content {
+  position: absolute;
+  left: 10%;
+  bottom: 25%;
+  width: 50%;
+  text-align: left;
+}
+
+.home h1 {
+  margin: 30px 0;
+  font-size: 50px;
+}
+
+.home h2 {
+  margin: 0 0 30px 0;
+  color: rgb(222, 222, 222);
+}
+
+.home h3 {
+  margin: 30px 0 0 0;
+  color: rgb(211, 211, 211);
+}
+
+.home-buttons {
+  margin-top: 30px;
+}
+
+.home-buttons button {
+  color: white;
+  background: red;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  margin: 0 10px 0 0;
+  border-radius: 50px;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.home-buttons button:hover {
+  filter: brightness(85%);
+}

@@ -27,9 +27,12 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" />
-        <Home user={user} />
-        <Route />
+        <Route exact path="/">
+          <Home user={user} />
+        </Route>
+        <Route path="/products">
+          <ProductCards />
+        </Route>
         <Route path="/sign-in">
           <SignIn setUser={setUser} />
         </Route>
