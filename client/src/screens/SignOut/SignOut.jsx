@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { signOut } from "../../services/users";
 import { useHistory } from "react-router-dom";
+import "./SignOut.css";
 
 const SignOut = (props) => {
   const { setUser } = props;
@@ -15,7 +16,11 @@ const SignOut = (props) => {
     signOutUser();
   }, [history, setUser]);
 
-  return "";
+  return (
+    <div>
+      <h1>test</h1>
+    </div>
+  );
 };
 
 export default SignOut;
