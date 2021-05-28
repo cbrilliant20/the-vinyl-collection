@@ -3,6 +3,7 @@ import "./Products.css"
 import Layout from "../../components/Layout/Layout"
 import Search from "../../components/Search/Search"
 import Sort from "../../components/Sort/Sort"
+import Product from "../../components/Product/Product"
 import { AZ, ZA } from "../../utils/sort"
 import { getProducts } from "../../services/products"
 import ProductCards from "../../components/ProductCards/ProductCards"
@@ -58,7 +59,18 @@ const Products = (props) => {
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className="products">
-        <ProductCards />
+        {searchResult.map((product, index) => {
+          return (
+            <Product
+              _id={product._id}
+              artist={product.artist}
+              imgURL={product.imgURL}
+              album={product.album}
+              genre={product.genre}
+              key={index}
+            />
+          )
+        })}
       </div>
     </Layout>
   )
