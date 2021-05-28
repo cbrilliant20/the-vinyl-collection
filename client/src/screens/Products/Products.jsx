@@ -6,6 +6,7 @@ import Sort from "../../components/Sort/Sort"
 import { AZ, ZA } from "../../utils/sort"
 import { getProducts } from "../../services/products"
 import ProductCards from "../../components/ProductCards/ProductCards"
+import ProductCard from "../../components/ProductCard/ProductCard"
 
 const Products = (props) => {
   const [products, setProducts] = useState([])
