@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react"
 import "./Products.css"
-import { Layout, Search, Sort } from "../../components"
-import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort"
+import Layout from "../../components/Layout/Layout"
+import Search from "../../components/Search/Search"
+import Sort from "../../components/Sort/Sort"
+import { AZ, ZA } from "../../utils/sort"
 import { getProducts } from "../../services/products"
 import ProductCards from "../../components/ProductCards/ProductCards"
 
@@ -9,7 +11,7 @@ const Products = (props) => {
   const [products, setProducts] = useState([])
   const [searchResult, setSearchResult] = useState([])
   const [applySort, setApplySort] = useState(false)
-  const [sortType, setSortType] = useState("name-ascending")
+  const [sortType, setSortType] = useState("artist-ascending")
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -25,19 +27,11 @@ const Products = (props) => {
       setSortType(type)
     }
     switch (type) {
-      case "name-ascending":
+      case "artist-ascending":
         setSearchResult(AZ(searchResult))
         break
-      case "name-descending":
+      case "artist-descending":
         setSearchResult(ZA(searchResult))
-        break
-      case "price-ascending":
-        setSearchResult(lowestFirst(searchResult))
-        break
-      case "price-descending":
-        setSearchResult(highestFirst(searchResult))
-        break
-      default:
         break
     }
   }
@@ -49,8 +43,9 @@ const Products = (props) => {
 
   const handleSearch = (event) => {
     const results = products.filter((product) =>
-      product.name.toLowerCase().includes(event.target.value.toLowerCase())
+      product.artist.toLowerCase().includes(event.target.value.toLowerCase())
     )
+    console.log(results)
     setSearchResult(results)
     setApplySort(true)
   }

@@ -3,7 +3,3 @@ const compareKey = (key) => (a, b) =>
 
 export const AZ = (arr) => arr.sort(compareKey("artist"))
 export const ZA = (arr) => arr.sort(compareKey("artist")).reverse()
-export const lowestFirst = (arr) =>
-  arr.sort((a, b) => parseInt(a.price) - parseInt(b.price))
-export const highestFirst = (arr) =>
-  arr.sort((a, b) => parseInt(b.price) - parseInt(a.price))
