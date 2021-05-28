@@ -1,0 +1,10 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  margin: 0 auto;
+}

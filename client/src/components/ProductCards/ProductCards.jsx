@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react"
 import "./ProductCards.css"
 import ProductCard from "../ProductCard/ProductCard"
+import Product from "../Product/Product"
 import { getProducts } from "../../services/products"
 
 const ProductCards = () => {
   const [products, setProducts] = useState([])
 
-  // getProducts still needs to be created in services when API is working
   useEffect(() => {
     const fetchProducts = async () => {
       const allProducts = await getProducts()
@@ -17,7 +17,7 @@ const ProductCards = () => {
   }, [])
 
   const cards = products.map((product, index) => (
-    <ProductCard
+    <Product
       _id={product._id}
       artist={product.artist}
       album={product.album}

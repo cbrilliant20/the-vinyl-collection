@@ -9,7 +9,7 @@ import SignUp from "./screens/SignUp/SignUp"
 import SignIn from "./screens/SignIn/SignIn"
 import SignOut from "./screens/SignOut/SignOut"
 import { verifyUser } from "./services/users"
-
+import Products from "./screens/Products/Products"
 import { useState, useEffect } from "react"
 import { Route, Switch, Redirect } from "react-router-dom"
 
@@ -31,7 +31,7 @@ function App() {
           <Home user={user} />
         </Route>
         <Route path="/products">
-          <ProductCards />
+          <Products />
         </Route>
         <Route path="/sign-in">
           <SignIn setUser={setUser} />
