@@ -1,9 +1,28 @@
 .product-card {
-  width: 100px;
+  width: 200px;
   margin: 20px;
   font-size: 10px;
 }
 
 .product-card-image {
-  width: 100px;
+  width: 200px;
+  box-shadow: 0 4px 3px -2px gray;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.product-card-artist {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.product-card-album {
+  margin-bottom: 5px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.product-card-genre {
+  font-size: 12px;
 }

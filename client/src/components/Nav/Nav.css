@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  height: 50px;
+  box-shadow: 0 5px 3px -2px gray;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0 50px;
+}

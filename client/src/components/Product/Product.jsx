@@ -7,9 +7,11 @@ const Product = (props) => {
       <Link className="card" to={`/products/${props._id}`}>
         <img className="product-card-image" src={props.imgURL} />
       </Link>
-      <p className="product-card-artist">{props.artist}</p>
-      <div className="product-card-album">{props.album}</div>
-      <div className="product-card-genre">{props.genre}</div>
+      <div className="product-card-text">
+        <p className="product-card-artist">{props.artist}</p>
+        <div className="product-card-album">{props.album}</div>
+        <div className="product-card-genre">{props.genre}</div>
+      </div>
     </div>
   )
 }
