@@ -1,5 +1,5 @@
 import { useState } from "react"
-import '.SignUp.css'
+import "./SignUp.css"
 import { signUp } from "../../services/users"
 import { useHistory } from "react-router-dom"
 
@@ -7,12 +7,12 @@ const SignUp = (props) => {
   const history = useHistory()
 
   const [form, setForm] = useState({
-    username: '',
-    email: '',
-    password: '',
-    passwordConfirmation: '',
+    username: "",
+    email: "",
+    password: "",
+    passwordConfirmation: "",
     isError: false,
-    errorMsg: '',
+    errorMsg: "",
   })
 
   const handleChange = (event) =>
@@ -20,21 +20,21 @@ const SignUp = (props) => {
       ...form,
       [event.target.name]: event.target.value,
     })
-  
+
   const onSignUp = async (event) => {
     event.preventDefault()
     const { setUser } = props
     try {
       const user = await signUp(form)
       setUser(user)
-      history.push('/')
+      history.push("/")
     } catch (error) {
       console.error(error)
       setForm({
-        username: '',
-        email: '',
-        password: '',
-        passwordConfirmation: '',
+        username: "",
+        email: "",
+        password: "",
+        passwordConfirmation: "",
         isError: true,
         errorMsg: "Invalid Credentials",
       })
@@ -42,74 +42,62 @@ const SignUp = (props) => {
   }
 
   const renderError = () => {
-    const toggleForm = form.isError ? 'danger'
-      : ''
+    const toggleForm = form.isError ? "danger" : ""
     if (form.isError) {
       return (
         <button type="submit" className={toggleForm}>
           {form.errorMsg}
         </button>
       )
-    } else { 
-    return <button type='submit'>Sign Up</button >
+    } else {
+      return <button type="submit">Sign Up</button>
+    }
   }
-}
-  
-  const { username, email, password,
-    passwordConfirmation } = form
-  
+
+  const { username, email, password, passwordConfirmation } = form
 
   return (
-    <div className='sign-up-form-container'>
+    <div className="sign-up-form-container">
       <h3>Sign Up</h3>
-      <form onSubmit={onSinUp}>
-        <label>
-          Username
-        </label>
+      <form onSubmit={onSignUp}>
+        <label>Username</label>
         <input
           required
-          type='text'
-          name='username'
+          type="text"
+          name="username"
           value={username}
-          placeholder='Username'
+          placeholder="Username"
           onChange={handleChange}
         />
-        <label>
-          Email Address 
-        </label>
+        <label>Email Address</label>
         <input
           required
-          type='email'
-          name='email'
+          type="email"
+          name="email"
           value={email}
-          placeholder='Email'
+          placeholder="Email"
           onChange={handleChange}
         />
-        <label>
-          Password
-        </label>
+        <label>Password</label>
         <input
           required
-          type='password'
-          name='password'
+          type="password"
+          name="password"
           value={password}
-          placeholder='Password'
+          placeholder="Password"
           onChange={handleChange}
         />
-        <label>
-          Password Confirmation
-        </label>
+        <label>Password Confirmation</label>
         <input
           required
-          type='password'
-          name='passwordConfirmation'
+          type="password"
+          name="passwordConfirmation"
           value={passwordConfirmation}
-          placeholder='Confirm Password'
+          placeholder="Confirm Password"
           onChange={handleChange}
         />
         {renderError()}
       </form>
-
     </div>
   )
 }
