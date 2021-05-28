@@ -37,14 +37,14 @@ const ProductDetail = (props) => {
           <div className="year">{product.year}</div>
           <div className="price">{`$${product.price}`}</div>
           <Link className="edit-button" to={`/products/${product._id}/edit`}>
-            Edit
+            <button>Edit</button>
           </Link>
-          <button
+          {/* <button
             className="delete-button"
             onClick={() => deleteProduct(product._id)}
           >
             Delete
-          </button>
+          </button> */}
         </div>
       </div>
     </Layout>

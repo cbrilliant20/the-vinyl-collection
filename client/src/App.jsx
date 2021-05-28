@@ -28,19 +28,19 @@ function App() {
         <Route exact path="/">
           <Home user={user} />
         </Route>
-        <Route path="/products">
+        <Route exact path="/products">
           <Products user={user} />
         </Route>
-        <Route path="/sign-in">
+        <Route exact path="/sign-in">
           <SignIn setUser={setUser} />
         </Route>
-        <Route path="/sign-up">
+        <Route exact path="/sign-up">
           <SignUp setUser={setUser} />
         </Route>
-        <Route path="/sign-out">
+        <Route exact path="/sign-out">
           <SignOut setUser={setUser} />
         </Route>
-        <Route path="/add-product">
+        <Route exact path="/add-product">
           {user ? <ProductCreate setUser={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route exact path="/products/:id/edit">
