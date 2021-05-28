@@ -19,7 +19,9 @@ const ProductCards = () => {
   const cards = products.map((product, index) => (
     <ProductCard
       _id={product._id}
-      name={product.name}
+      artist={product.artist}
+      album={product.album}
+      genre={product.genre}
       imgURL={product.imgURL}
       key={index}
     />
