@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import "./productEdit.css";
+import "./ProductEdit.css";
 import { useParams, Redirect } from "react-router-dom";
-import Layout from "../../components";
-import { getProduct, updateProduct } from "../../services/products";
-import deleteProduct from "../../services/products"
+import Layout from "../../components/Layout/Layout";
+import { getProduct, updateProduct, deleteProduct } from "../../services/products";
+
 
 const ProductEdit = (props) => {
   const [product, setProduct] = useState({
@@ -108,11 +108,14 @@ const ProductEdit = (props) => {
           required
           autoFocus
           onChange={handleChange}
-        />
+          />
+          <br />
         <button type="submit" className="save-button">
             Save Changes
         </button>
-          <button onClick={(e) => deleteProduct(product._id)}>
+          <button
+            className="delete-button"
+            onClick={() => deleteProduct(product._id)}>
             Delete
           </button>
         </form>

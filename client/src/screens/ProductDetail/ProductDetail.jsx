@@ -24,20 +24,22 @@ const ProductDetail = (props) => {
 
   return (
     <Layout user={props.user}>
+      <div className="parallax">
       <div className="product-detail">
         <img
           className="product-detail-image"
           src={product.imgURL}
           alt={product.album}
-        />
+          />
+          </div>
         <div className="detail">
           <div className="artist">{product.artist}</div>
           <div className="album">{product.album}</div>
-          <div className="genre">{product.genre}</div>
-          <div className="year">{product.year}</div>
-          <div className="price">{`$${product.price}`}</div>
+          <div className="genre">Genre : {product.genre}</div>
+          <div className="year">Year Released : {product.year}</div>
+          <div className="price">Price : {`$${product.price}`}</div>
           <Link className="edit-button" to={`/products/${product._id}/edit`}>
-            <button>Edit</button>
+            <button className="edit-btn">Edit</button>
           </Link>
           {/* <button
             className="delete-button"
@@ -46,7 +48,8 @@ const ProductDetail = (props) => {
             Delete
           </button> */}
         </div>
-      </div>
+    
+        </div>
     </Layout>
   )
 }

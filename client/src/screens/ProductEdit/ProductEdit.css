@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+
+.edit-product-img {
+height: 400px;
+width: 400px;
+}
+
+.product-edit-form {
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* -------------------------Buttons--------------------------------------------- */
+.save-button {
+  
+}
+.delete-button {
+  
+}
