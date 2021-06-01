@@ -1,5 +1,6 @@
 import "./ProductDetail.css"
 import { useState, useEffect } from "react"
+import RelatedProducts from "../../components/RelatedProducts/RelatedProducts"
 import Layout from "../../components/Layout/Layout"
 import { getProduct, deleteProduct } from "../../services/products"
 import { useParams, Link } from "react-router-dom"
@@ -25,6 +26,7 @@ const ProductDetail = (props) => {
   return (
     <Layout user={props.user}>
       <div className="parallax">
+        <RelatedProducts product={product} />
       <div className="product-detail">
         <img
           className="product-detail-image"
