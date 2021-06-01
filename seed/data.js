@@ -168,6 +168,151 @@ const insertData = async () => {
       imgURL:
         "https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-010-Lauryn-Hill-MISEDUCATION.jpg?w=1000",
     },
+    {
+    artist: "Alicia Keys",
+    album: "Songs in a Minor",
+    genre: "R&B",
+    year: "2001",
+    price: "60",
+    imgURL:
+      "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136263-31a12bb03d4d946da06fd2647e23603e1437ec48.jpg?w=450",
+    },
+    {
+      artist: "Radiohead",
+      album: "Pablo Honey",
+      genre: "Alternative Rock",
+      year: "1993",
+      price: "60",
+      imgURL:
+        "https://media.pitchfork.com/photos/5929a3b313d1975652138b45/1:1/w_320/060b305f.jpg",
+    },
+    {
+      artist: "Gnarls Barkley",
+      album: "St. Elsewhere",
+      genre: "R&B",
+      year: "2006",
+      price: "60",
+      imgURL:
+        "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136255-2709f136dcb8cbaf7b3a9a06fd0d45a5fb9eaa1e.jpg?w=450",
+    },
+    {
+      artist: "Coldplay",
+      album: "Viva La Vida",
+      genre: "Rock",
+      year: "2008",
+      price: "60",
+      imgURL:
+        "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136253-4a2f86f42149482f991499ab8bb1a08598c5f0a5.jpg?w=480",
+    },
+    {
+      artist: "Eminem",
+      album: "The Marshall Mathers LP",
+      genre: "Rap",
+      year: "2000",
+      price: "60",
+      imgURL:
+        "https://cdn.pitchfork.com/albums/18276/homepage_large.b7b06250.jpg",
+    },
+    {
+      artist: "Bjork",
+      album: "Post",
+      genre: "Art Pop",
+      year: "1995",
+      price: "60",
+      imgURL:
+        "https://media.pitchfork.com/photos/5e5819bc0db1200009923a5f/1:1/w_320/Post_Bjork.jpg",
+    },
+    {
+      artist: "Vampire Weekend",
+      album: "Vampire Weekend",
+      genre: "Indie Rock",
+      year: "2008",
+      price: "60",
+      imgURL:
+        "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136224-cf0ac3ce5f72cca77dc8e52af198d51e7ddfdb63.jpg?w=500",
+    },
+    {
+      artist: "M.I.A",
+      album: "Arular",
+      genre: "Electronic",
+      year: "2005",
+      price: "60",
+      imgURL:
+        "https://www.rollingstone.com/wp-content/uploads/2018/06/rs-136220-e217e447eebe935e26f7ce9c13f3ca875da99dec.jpg?w=500",
+    },
+    {
+      artist: "Fugees",
+      album: "The Score",
+      genre: "Rap",
+      year: "1996",
+      price: "60",
+      imgURL:
+        "https://media.pitchfork.com/photos/609d453a397206388541712e/1:1/w_320/Fugees:%20The%20Score.jpeg",
+    },
+    {
+      artist: "Jay-Z",
+      album: "The Black Album",
+      genre: "Rap",
+      year: "2003",
+      price: "60",
+      imgURL:
+        "https://cdn3.pitchfork.com/albums/4171/homepage_large.556c8ce3.jpg",
+    },
+    {
+      artist: "Justin Timberlake",
+      album: "FutureSex/LoveSounds",
+      genre: "Pop",
+      year: "2006",
+      price: "60",
+      imgURL:
+        "https://cdn2.pitchfork.com/albums/9237/homepage_large.5decb38a.jpg",
+    },
+    {
+      artist: "Missy Elliot",
+      album: "Miss E: So Addictive",
+      genre: "Rap",
+      year: "2001",
+      price: "60",
+      imgURL:
+        "https://cdn3.pitchfork.com/albums/2734/homepage_large.cbb707b4.jpg",
+    },
+    {
+      artist: "OutKast",
+      album: "Stankonia",
+      genre: "Rap",
+      year: "2000",
+      price: "60",
+      imgURL:
+        "https://cdn.pitchfork.com/albums/18282/homepage_large.7febfc0d.jpg",
+    },
+    {
+      artist: "Daft Punk",
+      album: "Disovery",
+      genre: "Electronic",
+      year: "2001",
+      price: "60",
+      imgURL:
+        "https://cdn.pitchfork.com/albums/2117/homepage_large.d23a880a.jpg",
+    },
+    {
+      artist: "Red Hot Chili Peppers",
+      album: "Californication",
+      genre: "Rock",
+      year: "1999",
+      price: "60",
+      imgURL:
+        "https://media.pitchfork.com/photos/5929a2269d034d5c69bf2b20/1:1/w_320/9b8b0313.gif",
+    },
+    {
+      artist: "Blink-182",
+      album: "Enema of the State",
+      genre: "Rock",
+      year: "1999",
+      price: "60",
+      imgURL:
+        "https://media.pitchfork.com/photos/5dd2d8bd4aba6d0009f18d9b/1:1/w_320/enemaof.jpg",
+    },
+
   ];
 
   await Product.insertMany(products);

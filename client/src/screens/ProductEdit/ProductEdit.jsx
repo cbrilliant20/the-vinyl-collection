@@ -55,7 +55,7 @@ const ProductEdit = (props) => {
           <form>
             <input
               required
-              className="edit-iput-img-link"
+              className="edit-input-img-link"
               placeholder="Image Link"
               value={product.imgURL}
               name="imgURL"
@@ -63,7 +63,7 @@ const ProductEdit = (props) => {
             />
           </form>
         </div>
-        <form classNAme="product-edit-form" onSubmit={handleSubmit}>
+        <form classNAme="productEditForm" onSubmit={handleSubmit}>
         <input
           className="input-artist"
           placeholder="Artist"
@@ -72,7 +72,8 @@ const ProductEdit = (props) => {
           required
           autoFocus
           onChange={handleChange}
-        />
+          />
+          <br/>
         <input
           className="input-album"
           placeholder="Album Name"
@@ -81,7 +82,8 @@ const ProductEdit = (props) => {
           required
           autoFocus
           onChange={handleChange}
-        />
+          />
+          <br/>
         <input
           className="input-genre"
           placeholder="Genre"
@@ -90,7 +92,8 @@ const ProductEdit = (props) => {
           required
           autoFocus
           onChange={handleChange}
-        />
+          />
+          <br/>
         <input
           className="input-year"
           placeholder="Year Released"
@@ -99,7 +102,8 @@ const ProductEdit = (props) => {
           required
           autoFocus
           onChange={handleChange}
-        />
+          />
+          <br />
         <input
           className="input-price"
           placeholder="Price"
@@ -109,6 +113,7 @@ const ProductEdit = (props) => {
           autoFocus
           onChange={handleChange}
           />
+          <br />
           <br />
         <button type="submit" className="save-button">
             Save Changes
