@@ -6,16 +6,68 @@
 height: 400px;
 width: 400px;
 }
-
-.product-edit-form {
+/* ------------------------------ Form ------------------------------------------------ */
+.productEditForm {
+  display: flex;
+  padding-top: 60px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+}
+.input-artist {
   font-family: 'Poppins', sans-serif;
-  
+}
+.input-genre {
+  font-family: 'Poppins', sans-serif;
+}
+.edit-input-img-link {
+  font-family: 'Poppins', sans-serif;
+}
+.input-year {
+  font-family: 'Poppins', sans-serif;
+}
+.input-album {
+  font-family: 'Poppins', sans-serif;
+}
+.input-price {
+  font-family: 'Poppins', sans-serif;
 }
 
-/* -------------------------Buttons--------------------------------------------- */
+/* ----------------------------- Buttons --------------------------------------------- */
 .save-button {
-  
+  margin-top: 70px;
+  margin-bottom:100px;
+  margin-right:50px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  letter-spacing: 1px;
+  background: black;
+  color: white;
 }
+.save-button:hover {
+  background:rgb(121, 118, 118);
+  color: white;
+}
+
 .delete-button {
-  
+  margin-top: 70px;
+  margin-bottom:100px;
+  margin-left:50px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  letter-spacing: 1px;
+  background: black;
+  color: white;
+}
+
+.delete-button:hover {
+  background:rgb(121, 118, 118);
+  color: white;
 }
