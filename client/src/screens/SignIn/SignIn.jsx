@@ -2,6 +2,7 @@ import { useState } from "react"
 import "./SignIn.css"
 import { signIn } from "../../services/users"
 import { useHistory } from "react-router-dom"
+import Layout from "../../components/Layout/Layout"
 
 const SignIn = (props) => {
   const history = useHistory()
@@ -54,30 +55,32 @@ const SignIn = (props) => {
   const { email, password } = form
 
   return (
-    <div className="form-container">
-      <h3>Sign In</h3>
-      <form onSubmit={onSignIn}>
-        <label>Email</label>
-        <input
-          required
-          type="text"
-          name="email"
-          value={email}
-          placeholder="Enter Email"
-          onChange={handleChange}
-        />
-        <label>Password</label>
-        <input
-          required
-          type="password"
-          name="password"
-          value={password}
-          placeholder="Enter Password"
-          onChange={handleChange}
-        />
-        {renderError()}
-      </form>
-    </div>
+    <Layout>
+      <div className="form-container">
+        <h3>Sign In</h3>
+        <form onSubmit={onSignIn}>
+          <label></label>
+          <input
+            required
+            type="text"
+            name="email"
+            value={email}
+            placeholder="Email"
+            onChange={handleChange}
+          />
+          <label></label>
+          <input
+            required
+            type="password"
+            name="password"
+            value={password}
+            placeholder="Password"
+            onChange={handleChange}
+          />
+          {renderError()}
+        </form>
+      </div>
+    </Layout>
   )
 }
 
