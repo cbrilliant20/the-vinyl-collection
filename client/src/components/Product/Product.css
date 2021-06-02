@@ -1,7 +1,18 @@
 .product-card {
-  width: 200px;
+  width: 240px;
   margin: 20px;
   font-size: 10px;
+  border: 2px ridge rgb(255, 254, 254);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  box-shadow: 0 4px 3px -2px gray;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
 }
 
 .product-card-image {
@@ -9,20 +20,23 @@
   box-shadow: 0 4px 3px -2px gray;
   border-radius: 5px;
   margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .product-card-artist {
   margin-bottom: 5px;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .product-card-album {
   margin-bottom: 5px;
   font-style: italic;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .product-card-genre {
   font-size: 12px;
+  margin-bottom: 10px;
 }

@@ -36,7 +36,7 @@ const insertData = async () => {
     {
       artist: "Marvin Gaye",
       album: "What's Going On",
-      genre: "R&B",
+      genre: "R&B/Soul",
       year: "1971",
       price: "60",
       imgURL:
@@ -54,7 +54,7 @@ const insertData = async () => {
     {
       artist: "Nirvana",
       album: "Nevermind",
-      genre: "Rock",
+      genre: "Alternative Rock",
       year: "1991",
       price: "60",
       imgURL:
@@ -126,7 +126,7 @@ const insertData = async () => {
     {
       artist: "Kanye West",
       album: "My Beautiful Dark Twisted Fantasy",
-      genre: "Rap",
+      genre: "Hip-Hop/Rap",
       year: "2010",
       price: "60",
       imgURL:
@@ -144,7 +144,7 @@ const insertData = async () => {
     {
       artist: "OutKast",
       album: "Stankonia",
-      genre: "Rap",
+      genre: "Hip-Hop/Rap",
       year: "2000",
       price: "60",
       imgURL:
@@ -162,7 +162,7 @@ const insertData = async () => {
     {
       artist: "Lauryn Hill",
       album: "The Miseducation of Lauryn Hill",
-      genre: "R&B",
+      genre: "R&B/Soul",
       year: "1998",
       price: "60",
       imgURL:
@@ -171,7 +171,7 @@ const insertData = async () => {
     {
     artist: "Alicia Keys",
     album: "Songs in a Minor",
-    genre: "R&B",
+    genre: "R&B/Soul",
     year: "2001",
     price: "60",
     imgURL:
@@ -189,7 +189,7 @@ const insertData = async () => {
     {
       artist: "Gnarls Barkley",
       album: "St. Elsewhere",
-      genre: "R&B",
+      genre: "Pop",
       year: "2006",
       price: "60",
       imgURL:
@@ -216,7 +216,7 @@ const insertData = async () => {
     {
       artist: "Bjork",
       album: "Post",
-      genre: "Art Pop",
+      genre: "Pop",
       year: "1995",
       price: "60",
       imgURL:
@@ -225,7 +225,7 @@ const insertData = async () => {
     {
       artist: "Vampire Weekend",
       album: "Vampire Weekend",
-      genre: "Indie Rock",
+      genre: "Alternative Rock",
       year: "2008",
       price: "60",
       imgURL:
@@ -243,7 +243,7 @@ const insertData = async () => {
     {
       artist: "Fugees",
       album: "The Score",
-      genre: "Rap",
+      genre: "Hip-Hop/Rap",
       year: "1996",
       price: "60",
       imgURL:
@@ -268,24 +268,6 @@ const insertData = async () => {
         "https://cdn2.pitchfork.com/albums/9237/homepage_large.5decb38a.jpg",
     },
     {
-      artist: "Missy Elliot",
-      album: "Miss E: So Addictive",
-      genre: "Rap",
-      year: "2001",
-      price: "60",
-      imgURL:
-        "https://cdn3.pitchfork.com/albums/2734/homepage_large.cbb707b4.jpg",
-    },
-    {
-      artist: "OutKast",
-      album: "Stankonia",
-      genre: "Rap",
-      year: "2000",
-      price: "60",
-      imgURL:
-        "https://cdn.pitchfork.com/albums/18282/homepage_large.7febfc0d.jpg",
-    },
-    {
       artist: "Daft Punk",
       album: "Disovery",
       genre: "Electronic",
@@ -297,7 +279,7 @@ const insertData = async () => {
     {
       artist: "Red Hot Chili Peppers",
       album: "Californication",
-      genre: "Rock",
+      genre: "Alternative Rock",
       year: "1999",
       price: "60",
       imgURL:
@@ -311,6 +293,69 @@ const insertData = async () => {
       price: "60",
       imgURL:
         "https://media.pitchfork.com/photos/5dd2d8bd4aba6d0009f18d9b/1:1/w_320/enemaof.jpg",
+    },
+    {
+      artist: "M83",
+      album: "Saturdays = Youth",
+      genre: "Electronic",
+      year: "2008",
+      price: "60",
+      imgURL:
+        "https://cdn.pitchfork.com/albums/11175/homepage_large.a84088b5.jpg",
+    },
+    {
+      artist: "Katy Perry",
+      album: "Teenage Dream",
+      genre: "Pop",
+      year: "2010",
+      price: "60",
+      imgURL:
+        "https://media.pitchfork.com/photos/602edc568b8835d37316a4ef/1:1/w_320/Katy%20Perry%20-%20Teenage%20Dream.jpg",
+    },
+    {
+      artist: "Usher",
+      album: "Confessions",
+      genre: "R&B/Soul",
+      year: "2004",
+      price: "60",
+      imgURL:
+        "https://media.pitchfork.com/photos/5fb5501635fb80fc5c920dd1/1:1/w_320/confessions_usher.jpg",
+    },
+    {
+      artist: "Sade",
+      album: "Diamond Life",
+      genre: "Pop",
+      year: "1999",
+      price: "60",
+      imgURL:
+        "https://media.pitchfork.com/photos/5f7b60c15bf2768247125008/1:1/w_320/diamond%20life_sade.jpg",
+    },
+    {
+      artist: "Odesza",
+      album: "A Moment Apart",
+      genre: "Electronic",
+      year: "2017",
+      price: "60",
+      imgURL:
+        "https://media.pitchfork.com/photos/59aee66e1e3a0135b6a447ed/1:1/w_320/amomentapart.jpg",
+    },
+    {
+      artist: "Beres Hammond",
+      album: "One Love, One Life",
+      genre: "Reggae",
+      year: "2012",
+      price: "60",
+      imgURL:
+        "https://secureservercdn.net/45.40.148.117/fbc.19f.myftpupload.com/wp-content/uploads/2013/01/054645196420-e1365518915733.jpg",
+    },
+    {
+      artist: "Ziggy Marley",
+      album: "Dragonfly",
+      genre: "Reggae",
+      year: "2003",
+      price: "60",
+      imgURL:
+        "https://is3-ssl.mzstatic.com/image/thumb/Features114/v4/d9/82/94/d9829483-77c7-bea4-7b27-9ec10d0ae9a1/dj.reosdrxa.jpg/500x500bb.webp",
     },
 
   ];

@@ -4,12 +4,36 @@
   justify-content: space-between;
   background: black;
   color: white;
-  height: 50px;
+  height: 70px;
   box-shadow: 0 5px 3px -2px gray;
+  font-size: 18px;
+  /* width: 100%; */
 }
 
 .nav a {
   text-decoration: none;
   color: white;
   padding: 0 50px;
+}
+
+.links {
+  display: flex;
+  width: 100%;
+}
+
+.link-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo p {
+  margin: 0 10px;
+  font-size: 24px;
 }

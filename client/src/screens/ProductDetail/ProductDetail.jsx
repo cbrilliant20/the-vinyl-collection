@@ -1,5 +1,6 @@
 import "./ProductDetail.css"
 import { useState, useEffect } from "react"
+import RelatedProducts from "../../components/RelatedProducts/RelatedProducts"
 import Layout from "../../components/Layout/Layout"
 import { getProduct, deleteProduct } from "../../services/products"
 import { useParams, Link } from "react-router-dom"
@@ -25,31 +26,26 @@ const ProductDetail = (props) => {
   return (
     <Layout user={props.user}>
       <div className="parallax">
-      <div className="product-detail">
-        <img
-          className="product-detail-image"
-          src={product.imgURL}
-          alt={product.album}
+        <div className="product-detail">
+          <img
+            className="product-detail-image"
+            src={product.imgURL}
+            alt={product.album}
           />
+
+          <div className="detail">
+            <div className="artist">{product.artist}</div>
+            <div className="album">{product.album}</div>
+            <div className="genre">Genre : {product.genre}</div>
+            <div className="year">Year Released : {product.year}</div>
+            <div className="price">Price : {`$${product.price}`}</div>
+            <Link className="edit-button" to={`/products/${product._id}/edit`}>
+              <button className="edit-btn">Edit</button>
+            </Link>
           </div>
-        <div className="detail">
-          <div className="artist">{product.artist}</div>
-          <div className="album">{product.album}</div>
-          <div className="genre">Genre : {product.genre}</div>
-          <div className="year">Year Released : {product.year}</div>
-          <div className="price">Price : {`$${product.price}`}</div>
-          <Link className="edit-button" to={`/products/${product._id}/edit`}>
-            <button className="edit-btn">Edit</button>
-          </Link>
-          {/* <button
-            className="delete-button"
-            onClick={() => deleteProduct(product._id)}
-          >
-            Delete
-          </button> */}
         </div>
-    
-        </div>
+        <RelatedProducts product={product} />
+      </div>
     </Layout>
   )
 }

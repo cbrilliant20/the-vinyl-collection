@@ -1,5 +1,7 @@
 import "./Nav.css"
 import { NavLink } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCompactDisc } from "@fortawesome/free-solid-svg-icons"
 
 const authenticatedOptions = (
   <>
@@ -36,7 +38,8 @@ const Nav = ({ user }) => {
     <nav>
       <div className="nav">
         <NavLink className="logo" to="/">
-          T.V.E.
+          <FontAwesomeIcon icon={faCompactDisc} />
+          <p>T.V.E.</p>
         </NavLink>
         <div className="links">
           {user && <div className="link-welcome">Welcome, {user.username}</div>}
