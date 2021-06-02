@@ -1,8 +1,5 @@
 .related-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-left: 70px;
+  margin: 20px 0;
   color: rgb(255, 255, 255);
   background-color: rgba(182, 173, 173, 0.9);
   border-radius: 10px;
@@ -27,4 +24,17 @@
   margin-left: 10px;
   font-weight: 400;
   overflow-y: hidden;
+}
+
+.related-container {
+  background-color: grey;
+  position: absolute;
+  left: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .related-container {
+    position: relative;
+    margin: 20 auto;
+  }
 }

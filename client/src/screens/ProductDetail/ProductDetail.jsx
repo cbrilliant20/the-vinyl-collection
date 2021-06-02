@@ -26,7 +26,6 @@ const ProductDetail = (props) => {
   return (
     <Layout user={props.user}>
       <div className="parallax">
-        <RelatedProducts product={product} />
         <div className="product-detail">
           <img
             className="product-detail-image"
@@ -45,6 +44,7 @@ const ProductDetail = (props) => {
             </Link>
           </div>
         </div>
+        <RelatedProducts product={product} />
       </div>
     </Layout>
   )
