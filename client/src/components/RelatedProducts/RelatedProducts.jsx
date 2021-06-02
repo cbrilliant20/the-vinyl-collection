@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
 import { getProducts } from "../../services/products"
+import "./RelatedProducts.css"
 
 function RelatedProducts(props) {
-  const [products, setProducts] = useState ([])
+  const [products, setProducts] = useState([])
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -12,20 +13,15 @@ function RelatedProducts(props) {
     fetchProducts()
   }, [])
 
-
-
   return (
-    <div className="relatedArtist-container">
-      <h3>Other Artist You May Like...</h3>
+    <div className="related-container">
+      <h3>Artists You May Like</h3>
       {products
         .filter((product) => product.genre === props.product.genre)
         .map((product, index) => (
-           
-          <h3>{product.artist}</h3>
+          <h4>{product.artist}</h4>
         ))}
-    
-      
-  </div>
-)
+    </div>
+  )
 }
 export default RelatedProducts
