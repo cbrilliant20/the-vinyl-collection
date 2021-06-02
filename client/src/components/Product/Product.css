@@ -25,14 +25,15 @@
 
 .product-card-artist {
   margin-bottom: 5px;
-  font-weight: bold;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .product-card-album {
   margin-bottom: 5px;
   font-style: italic;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .product-card-genre {

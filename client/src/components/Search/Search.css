@@ -3,8 +3,6 @@
   border-radius: 15px;
   font-size: 16px;
   outline: none;
-  cursor: pointer;
-
 }
 
 .search-icon {
@@ -12,11 +10,12 @@
   right: 0;
   margin-top: 32px;
   margin-right: 15px;
-  z-index: 100;
+  /* z-index: 100; */
   color: grey;
 }
 
 .search-container {
   width: 500px;
   position: relative;
+  margin: 0 auto;
 }

@@ -66,16 +66,20 @@
 }
 /* ---------------------------------Button ------------------------------------------------------ */
 .edit-btn {
-  margin-top: 70px;
-  padding: 3px;
-  letter-spacing: 1px;
-  background: black;
+  background-color: rgb(7, 7, 7);
   color: white;
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 40px;
+  width: 400px;
+  height: 40px;
+  font-weight: bold;
+  transition: 1s ease;
 }
 
 .edit-btn:hover {
-  background: rgb(121, 118, 118);
-  color: white;
+  background: rgb(255, 255, 255);
+  color: black;
 }
 
 .related-container {
