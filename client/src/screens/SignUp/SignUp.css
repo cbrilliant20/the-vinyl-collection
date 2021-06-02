@@ -1,3 +1,10 @@
+.sign-up-container {
+  background-image: url("https://i.pinimg.com/originals/e7/84/4a/e7844a5194cd34bcf78c35a4662438a1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 70px - 20px);
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -30,8 +37,11 @@ button {
   cursor: pointer;
 }
 
-h3 {
+.sign-up-form-container h3 {
   font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
 }
 
 button:hover {
