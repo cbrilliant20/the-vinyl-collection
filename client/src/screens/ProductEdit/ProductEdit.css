@@ -6,15 +6,16 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #121111 40%, #e0e4e6 40%);
-  height: 100vh;
+  height: 100%;
   width: 100vw;
+  overflow-y: scroll;
 }
 
 .edit-product-img {
   height: 400px;
   width: 400px;
   border: 1px solid white;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 /* ------------------------------ Form ------------------------------------------------ */
 .productEditForm {
@@ -22,7 +23,7 @@
   padding-top: 60px;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -34,30 +35,34 @@
 
 /* ----------------------------- Buttons --------------------------------------------- */
 .save-button {
-  margin-top: 30px;
-  /* margin-bottom: 100px; */
-  /* margin-right: 50px; */
-  padding: 3px;
-  letter-spacing: 1px;
-  background: black;
+  background-color: rgb(7, 7, 7);
   color: white;
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 40px;
+  width: 400px;
+  height: 40px;
+  font-weight: bold;
+  transition: 1s ease;
 }
 .save-button:hover {
-  background: rgb(121, 118, 118);
-  color: white;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .delete-button {
-  /* margin-top: 70px;
-  margin-bottom: 100px;
-  margin-left: 50px; */
-  padding: 3px;
-  letter-spacing: 1px;
-  background: black;
+  background-color: rgb(7, 7, 7);
   color: white;
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 40px;
+  width: 400px;
+  height: 40px;
+  font-weight: bold;
+  transition: 1s ease;
 }
 
 .delete-button:hover {
-  background: rgb(121, 118, 118);
-  color: white;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }

@@ -32,4 +32,5 @@ input {
   width: 400px;
   height: 40px;
   font-weight: bold;
+  transition: 1s ease;
 }
