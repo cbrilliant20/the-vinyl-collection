@@ -13,3 +13,16 @@
   color: white;
   padding: 0 50px;
 }
+
+.links {
+  display: flex;
+  width: 100%;
+}
+
+.link-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: burlywood; */
+  margin: 0 auto;
+}
