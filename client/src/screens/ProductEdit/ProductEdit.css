@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #121111 40%, #e0e4e6 40%);
-  height: 100%;
   width: 100vw;
   overflow-y: scroll;
 }
@@ -15,22 +14,25 @@
   height: 400px;
   width: 400px;
   border: 1px solid white;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 /* ------------------------------ Form ------------------------------------------------ */
 .productEditForm {
   display: flex;
-  padding-top: 60px;
+  padding-top: 10px;
   flex-direction: column;
   align-items: center;
-  /* padding-bottom: 100px; */
   justify-content: center;
-  height: 100%;
-  width: 100%;
 }
 
 .productEditForm input {
   font-size: 18px;
+  width: 400px;
+  margin-top: 20px;
+  background-color: rgba(240, 233, 233, 0.925);
+  height: 40px;
+  border: none;
+  color: rgb(6, 6, 6);
 }
 
 /* ----------------------------- Buttons --------------------------------------------- */
@@ -55,7 +57,7 @@
   color: white;
   font-size: 18px;
   padding: 5px;
-  margin-top: 40px;
+  margin: 40px 0;
   width: 400px;
   height: 40px;
   font-weight: bold;

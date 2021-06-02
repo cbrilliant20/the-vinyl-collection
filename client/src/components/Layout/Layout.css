@@ -16,3 +16,7 @@
 .layout-foot {
   grid-area: foot;
 }
+
+.layout-children {
+  grid-area: main;
+}
