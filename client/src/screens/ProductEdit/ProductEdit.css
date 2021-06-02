@@ -1,73 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
-
+.product-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #121111 40%, #e0e4e6 40%);
+  width: 100vw;
+  overflow-y: scroll;
+}
 
 .edit-product-img {
-height: 400px;
-width: 400px;
+  height: 400px;
+  width: 400px;
+  border: 1px solid white;
+  margin-top: 50px;
 }
 /* ------------------------------ Form ------------------------------------------------ */
 .productEditForm {
   display: flex;
-  padding-top: 60px;
+  padding-top: 10px;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
-  justify-content: space-evenly;
-  height: 100%;
-  width: 100%;
+  justify-content: center;
 }
-.input-artist {
-  font-family: 'Poppins', sans-serif;
-}
-.input-genre {
-  font-family: 'Poppins', sans-serif;
-}
-.edit-input-img-link {
-  font-family: 'Poppins', sans-serif;
-}
-.input-year {
-  font-family: 'Poppins', sans-serif;
-}
-.input-album {
-  font-family: 'Poppins', sans-serif;
-}
-.input-price {
-  font-family: 'Poppins', sans-serif;
+
+.productEditForm input {
+  font-size: 18px;
+  width: 400px;
+  margin-top: 20px;
+  background-color: rgba(240, 233, 233, 0.925);
+  height: 40px;
+  border: none;
+  color: rgb(6, 6, 6);
 }
 
 /* ----------------------------- Buttons --------------------------------------------- */
 .save-button {
-  margin-top: 70px;
-  margin-bottom:100px;
-  margin-right:50px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 3px;
-  padding-right: 3px;
-  letter-spacing: 1px;
-  background: black;
+  background-color: rgb(7, 7, 7);
   color: white;
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 40px;
+  width: 400px;
+  height: 40px;
+  font-weight: bold;
+  transition: 1s ease;
 }
 .save-button:hover {
-  background:rgb(121, 118, 118);
-  color: white;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .delete-button {
-  margin-top: 70px;
-  margin-bottom:100px;
-  margin-left:50px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 3px;
-  padding-right: 3px;
-  letter-spacing: 1px;
-  background: black;
+  background-color: rgb(7, 7, 7);
   color: white;
+  font-size: 18px;
+  padding: 5px;
+  margin: 40px 0;
+  width: 400px;
+  height: 40px;
+  font-weight: bold;
+  transition: 1s ease;
 }
 
 .delete-button:hover {
-  background:rgb(121, 118, 118);
-  color: white;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
