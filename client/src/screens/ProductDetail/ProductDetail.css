@@ -1,81 +1,83 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
 
 .detail {
-  font-family: 'Poppins', sans-serif;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  font-family: "Poppins", sans-serif;
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
   font-size: 15px;
-  background-color: white;
-  height: 500px;
+  /* background-color: white; */
+  /* height: 500px; */
+  padding: 20px;
   width: 600px;
-  margin:auto;
+  /* margin: auto; */
+  margin-top: 50px;
 }
 
-.product-detail-image{
-  width: 250px;
-  height: 250px;
-
+.product-detail-image {
+  width: 300px;
+  margin-top: 20px;
+  /* height: 250px; */
 }
 .product-detail {
-  height: 200px;
-  background-color:rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(30px);
-  
+  /* height: 200px; */
+  background-color: rgba(255, 255, 255);
+  /* backdrop-filter: blur(30px); */
 }
 /* -----------------------------Descriptions---------------------------------------------------- */
 .artist {
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 4px;
-  text-shadow:2px 2px rgb(121, 118, 118);
+  text-shadow: 2px 2px rgb(121, 118, 118);
 }
-.album{
+.album {
   font-size: 25px;
-  font-weight: 600;
-  padding-bottom: 100px;
+  font-weight: 500;
+  /* padding-bottom: 100px; */
 }
 .genre {
   font-size: 20px;
-  font-weight: 600;
-  padding-bottom: 5px;
-  letter-spacing:2px;
-}
-.price{
-  font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 5px;
   letter-spacing: 2px;
 }
-.year{
+.price {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+.year {
+  font-size: 20px;
+  font-weight: 500;
   padding-bottom: 5px;
   letter-spacing: 2px;
 }
 /* -----------------------------Scrolling Image Effect------------------------------------------------------------- */
 .parallax {
-  background-image: url("https://images.unsplash.com/photo-1616714108212-fb526152dbf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmVjb3JkJTIwcGxheWVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-  height:800px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 50px; */
+  background: linear-gradient(180deg, #121111 40%, #e0e4e6 40%);
+  height: 100vh;
+  width: 100vw;
 }
 /* ---------------------------------Button ------------------------------------------------------ */
 .edit-btn {
   margin-top: 70px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 3px;
-  padding-right: 3px;
+  padding: 3px;
   letter-spacing: 1px;
   background: black;
   color: white;
-  
 }
 
 .edit-btn:hover {
-  background:rgb(121, 118, 118);
+  background: rgb(121, 118, 118);
   color: white;
+}
+
+.related-container {
+  background-color: grey;
 }
