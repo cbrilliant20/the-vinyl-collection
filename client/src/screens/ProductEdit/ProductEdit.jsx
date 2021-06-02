@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react"
 import "./ProductEdit.css"
-import { useParams, Redirect } from "react-router-dom"
+import { useParams, Redirect, Link } from "react-router-dom"
 import Layout from "../../components/Layout/Layout"
 import {
   getProduct,
   updateProduct,
   deleteProduct,
 } from "../../services/products"
+// import { Redirect } from "react-router-dom"
 
 const ProductEdit = (props) => {
   const [product, setProduct] = useState({
@@ -57,16 +58,14 @@ const ProductEdit = (props) => {
           />
         </div>
         <form className="productEditForm" onSubmit={handleSubmit}>
-          <form>
-            <input
-              required
-              className="edit-input-img-link"
-              placeholder="Image Link"
-              value={product.imgURL}
-              name="imgURL"
-              onChange={handleChange}
-            />
-          </form>
+          <input
+            required
+            className="edit-input-img-link"
+            placeholder="Image Link"
+            value={product.imgURL}
+            name="imgURL"
+            onChange={handleChange}
+          />
           <input
             className="input-artist"
             placeholder="Artist"
@@ -76,7 +75,7 @@ const ProductEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          <br />
+
           <input
             className="input-album"
             placeholder="Album Name"
@@ -86,7 +85,7 @@ const ProductEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          <br />
+
           <input
             className="input-genre"
             placeholder="Genre"
@@ -96,7 +95,7 @@ const ProductEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          <br />
+
           <input
             className="input-year"
             placeholder="Year Released"
@@ -106,7 +105,7 @@ const ProductEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          <br />
+
           <input
             className="input-price"
             placeholder="Price"
@@ -116,17 +115,17 @@ const ProductEdit = (props) => {
             autoFocus
             onChange={handleChange}
           />
-          <br />
-          <br />
           <button type="submit" className="save-button">
             Save Changes
           </button>
-          <button
-            className="delete-button"
-            onClick={() => deleteProduct(product._id)}
-          >
-            Delete
-          </button>
+          <Link to="/products">
+            <button
+              className="delete-button"
+              onClick={() => deleteProduct(product._id)}
+            >
+              Delete
+            </button>
+          </Link>
         </form>
       </div>
     </Layout>
