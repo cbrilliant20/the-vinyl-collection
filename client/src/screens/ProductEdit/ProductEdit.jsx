@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react"
-import "./ProductEdit.css"
-import { useParams, Redirect, Link } from "react-router-dom"
-import Layout from "../../components/Layout/Layout"
+import { useState, useEffect } from "react";
+import "./ProductEdit.css";
+import { useParams, Redirect, Link } from "react-router-dom";
+import Layout from "../../components/Layout/Layout";
 import {
   getProduct,
   updateProduct,
   deleteProduct,
-} from "../../services/products"
+} from "../../services/products";
 // import { Redirect } from "react-router-dom"
 
 const ProductEdit = (props) => {
@@ -17,38 +17,38 @@ const ProductEdit = (props) => {
     genre: "",
     year: "",
     price: "",
-  })
+  });
 
-  const [isEdited, setEdited] = useState(false)
-  let { id } = useParams()
+  const [isEdited, setEdited] = useState(false);
+  let { id } = useParams();
 
   useEffect(() => {
     const grabProduct = async () => {
-      const product = await getProduct(id)
-      setProduct(product)
-    }
-    grabProduct()
-  }, [id])
+      const product = await getProduct(id);
+      setProduct(product);
+    };
+    grabProduct();
+  }, [id]);
 
   const handleChange = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event.target;
     setProduct({
       ...product,
       [name]: value,
-    })
-  }
+    });
+  };
   const handleSubmit = async (event) => {
-    event.preventDefault()
-    const updated = await updateProduct(id, product)
-    setEdited(updated)
-  }
+    event.preventDefault();
+    const updated = await updateProduct(id, product);
+    setEdited(updated);
+  };
 
   if (isEdited) {
-    return <Redirect to={`/products/${id}`} />
+    return <Redirect to={`/products/${id}`} />;
   }
 
   return (
-    <Layout>
+    <Layout user={props.user}>
       <div className="product-edit">
         <div className="img-container">
           <img
@@ -129,7 +129,7 @@ const ProductEdit = (props) => {
         </form>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default ProductEdit
+export default ProductEdit;

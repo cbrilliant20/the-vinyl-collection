@@ -1,7 +1,7 @@
-import "./Nav.css"
-import { NavLink } from "react-router-dom"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCompactDisc } from "@fortawesome/free-solid-svg-icons"
+import "./Nav.css";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCompactDisc } from "@fortawesome/free-solid-svg-icons";
 
 const authenticatedOptions = (
   <>
@@ -12,18 +12,18 @@ const authenticatedOptions = (
       Sign Out
     </NavLink>
   </>
-)
+);
 
 const unauthenticatedOptions = (
   <>
-    <NavLink className="link" to="sign-up">
+    <NavLink className="link" to="/sign-up">
       Sign Up
     </NavLink>
-    <NavLink className="link" to="sign-in">
+    <NavLink className="link" to="/sign-in">
       Sign In
     </NavLink>
   </>
-)
+);
 
 const alwaysOptions = (
   <>
@@ -31,7 +31,7 @@ const alwaysOptions = (
       Records
     </NavLink>
   </>
-)
+);
 
 const Nav = ({ user }) => {
   return (
@@ -48,6 +48,6 @@ const Nav = ({ user }) => {
         </div>
       </div>
     </nav>
-  )
-}
-export default Nav
+  );
+};
+export default Nav;
