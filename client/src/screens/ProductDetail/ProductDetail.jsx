@@ -44,7 +44,7 @@ const ProductDetail = (props) => {
             </Link>
           </div>
         </div>
-        <RelatedProducts product={product} />
+        {/* <RelatedProducts product={product} /> */}
       </div>
     </Layout>
   )
