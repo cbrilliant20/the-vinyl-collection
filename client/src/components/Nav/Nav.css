@@ -37,3 +37,30 @@
   margin: 0 10px;
   font-size: 24px;
 }
+
+@media only screen and (max-width: 425px) {
+  .nav {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav a {
+    padding: 0;
+  }
+  .link-welcome {
+    display: none;
+  }
+  .logo p {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .icon {
+    margin: 0 5px 0 15px;
+  }
+}
