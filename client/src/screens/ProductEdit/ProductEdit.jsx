@@ -10,6 +10,7 @@ import {
 // import { Redirect } from "react-router-dom"
 
 const ProductEdit = (props) => {
+  console.log(props);
   const [product, setProduct] = useState({
     imgURL: "",
     artist: "",
