@@ -2,7 +2,7 @@
   width: 240px;
   margin: 20px;
   font-size: 10px;
-  border: 2px ridge rgb(255, 254, 254);
+  border: 1px ridge gray;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,11 +16,12 @@
 }
 
 .product-card-image {
-  width: 200px;
-  box-shadow: 0 4px 3px -2px gray;
-  border-radius: 5px;
+  width: 240px;
+  box-shadow: 0 3px 3px -2px gray;
   margin-bottom: 5px;
-  margin-top: 10px;
+  border: 1px ridge gray;
+  border-bottom: none;
+  /* margin-top: 10px; */
 }
 
 .product-card-artist {

@@ -42,7 +42,12 @@ const Nav = ({ user }) => {
           <p>T.V.E.</p>
         </NavLink>
         <div className="links">
-          {user && <div className="link-welcome">Welcome, {user.username}</div>}
+          {user && (
+            <p className="link-welcome">
+              <span className="welcome"> Welcome, </span>&nbsp;
+              <span className="username">{user.username} </span>
+            </p>
+          )}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
