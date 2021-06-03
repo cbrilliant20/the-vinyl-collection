@@ -53,3 +53,23 @@
 .home-buttons button:hover {
   filter: brightness(85%);
 }
+
+@media only screen and (min-device-width: 375px) 
+and (max-device-width: 812px) {
+
+ .home h1 {
+   font-size: 40px
+ }
+ .home h2 {
+ font-size: 20px
+ }
+ .home h3 {
+ font-size: 15px
+ }
+ .home-buttons button {
+   margin : 5px
+ }
+ .home-content {
+   width: 75%
+}
+}
