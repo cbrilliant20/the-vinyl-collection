@@ -37,7 +37,7 @@ const Nav = ({ user }) => {
   return (
     <nav>
       <div className="nav">
-        <NavLink className="logo" to="/">
+        <NavLink className="logo" to="/products">
           <FontAwesomeIcon className="icon" icon={faCompactDisc} />
           <p>T.V.E.</p>
         </NavLink>
