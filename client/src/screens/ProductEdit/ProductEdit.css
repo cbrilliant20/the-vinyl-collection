@@ -67,6 +67,7 @@
 
 .delete-button:hover {
   background: red;
+  filter: brightness(80%);
   color: rgb(255, 255, 255);
 }
 

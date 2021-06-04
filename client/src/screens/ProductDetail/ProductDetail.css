@@ -25,6 +25,7 @@
 .album {
   font-size: 25px;
   font-weight: 500;
+  color: red;
 }
 .songs {
   font-size: 15px;
