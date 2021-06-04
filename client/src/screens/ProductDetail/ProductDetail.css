@@ -26,6 +26,16 @@
   font-size: 25px;
   font-weight: 500;
 }
+.songs {
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.tracks {
+  font-weight: 200;
+  margin-bottom: 20px;
+}
 .genre {
   font-size: 20px;
   font-weight: 500;
