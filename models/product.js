@@ -9,7 +9,9 @@ const Product = new Schema(
     year: { type: String, required: true },
     price: { type: String, required: true },
     imgURL: { type: String, required: true },
+    tracks: { type: String, required: false },
   },
+
   { timestamps: true }
 );
 

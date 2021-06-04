@@ -8,6 +8,7 @@ const ProductCreate = (props) => {
   const [product, setProduct] = useState({
     artist: "",
     album: "",
+    tracks: "",
     genre: "",
     year: "",
     price: "",
@@ -49,6 +50,15 @@ const ProductCreate = (props) => {
           type="text"
           value={product.album}
           name="album"
+          required
+          onChange={handleChange}
+        />
+        <input
+          className="input-tracks"
+          placeholder="Tracks"
+          type="text"
+          value={product.tracks}
+          name="tracks"
           required
           onChange={handleChange}
         />
