@@ -1,7 +1,7 @@
-import "./Nav.css";
-import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCompactDisc } from "@fortawesome/free-solid-svg-icons";
+import "./Nav.css"
+import { NavLink } from "react-router-dom"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCompactDisc } from "@fortawesome/free-solid-svg-icons"
 
 const authenticatedOptions = (
   <>
@@ -12,7 +12,7 @@ const authenticatedOptions = (
       Sign Out
     </NavLink>
   </>
-);
+)
 
 const unauthenticatedOptions = (
   <>
@@ -23,7 +23,7 @@ const unauthenticatedOptions = (
       Sign In
     </NavLink>
   </>
-);
+)
 
 const alwaysOptions = (
   <>
@@ -31,23 +31,28 @@ const alwaysOptions = (
       Records
     </NavLink>
   </>
-);
+)
 
 const Nav = ({ user }) => {
   return (
     <nav>
       <div className="nav">
-        <NavLink className="logo" to="/">
-          <FontAwesomeIcon icon={faCompactDisc} />
+        <NavLink className="logo" to="/products">
+          <FontAwesomeIcon className="icon" icon={faCompactDisc} />
           <p>T.V.E.</p>
         </NavLink>
         <div className="links">
-          {user && <div className="link-welcome">Welcome, {user.username}</div>}
+          {user && (
+            <p className="link-welcome">
+              <span className="welcome"> Welcome, </span>&nbsp;
+              <span className="username">{user.username} </span>
+            </p>
+          )}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>
       </div>
     </nav>
-  );
-};
-export default Nav;
+  )
+}
+export default Nav

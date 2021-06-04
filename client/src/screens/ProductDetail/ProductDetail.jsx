@@ -1,9 +1,9 @@
-import "./ProductDetail.css";
-import { useState, useEffect } from "react";
-import RelatedProducts from "../../components/RelatedProducts/RelatedProducts";
-import Layout from "../../components/Layout/Layout";
-import { getProduct, deleteProduct } from "../../services/products";
-import { useParams, Link } from "react-router-dom";
+import "./ProductDetail.css"
+import { useState, useEffect } from "react"
+import Layout from "../../components/Layout/Layout"
+import { getProduct, deleteProduct } from "../../services/products"
+import { useParams, Link } from "react-router-dom"
+import ModalBox from "../../components/ModalBox/ModalBox"
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -32,7 +32,7 @@ const ProductDetail = (props) => {
             src={product.imgURL}
             alt={product.album}
           />
-
+          
           <div className="detail">
             <div className="artist">{product.artist}</div>
             <div className="album">{product.album}</div>
@@ -50,7 +50,7 @@ const ProductDetail = (props) => {
             </Link>
           </div>
         </div>
-        <RelatedProducts product={product} />
+        <ModalBox product={product} />
       </div>
     </Layout>
   );
