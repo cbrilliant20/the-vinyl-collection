@@ -82,3 +82,30 @@
   background: rgb(255, 255, 255);
   color: black;
 }
+
+@media (max-width: 800px) {
+  .product-detail-image {
+    width: 200px;
+    margin-top: 120px;
+  }
+  .tracks {
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .edit-btn {
+    font-size: 9px;
+    padding: 2.5px;
+    margin-top: 10px;
+    width: 200px;
+    height: 20px;
+  }
+  button.btn.btn-outline-secondary {
+    font-size: 9px;
+    padding: 2.5px;
+    margin-top: 30px;
+    width: 200px;
+    height: 20px;
+  }
+}

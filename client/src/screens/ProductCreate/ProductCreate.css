@@ -32,3 +32,13 @@
   font-weight: bold;
   transition: 1s ease;
 }
+
+@media (max-width: 800px) {
+  .create-form input {
+    width: 300px;
+  }
+
+  .submit-button {
+    width: 300px;
+  }
+}
