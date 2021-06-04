@@ -10,15 +10,24 @@
   width: 100%;
 }
 
+.nav a:hover {
+  filter: brightness(110%);
+  color: red;
+  border-bottom: none;
+  text-decoration: none;
+}
+
 .nav a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0 50px;
+  transition: 0.5s ease-in;
 }
 
 .links {
   display: flex;
-  width: 100%;
+  justify-content: space-evenly;
+  width: 70%;
 }
 
 .link-welcome {
@@ -26,7 +35,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  /* border-bottom: red 1px solid; */
+  text-decoration: none;
 }
 
 .logo {
