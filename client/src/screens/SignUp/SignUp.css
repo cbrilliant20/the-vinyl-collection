@@ -50,3 +50,15 @@ button:hover {
   background-color: rgb(255, 255, 255);
   color: black;
 }
+
+@media (max-width: 800px) {
+  .sign-up-form-container input {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  .sign-up-form-container button {
+    width: 300px;
+    font-size: 16px;
+  }
+}
