@@ -63,3 +63,8 @@ button:hover {
   background-color: rgb(255, 255, 255);
   color: black;
 }
+
+#sign-up-button:hover {
+  background: red;
+  color: white;
+}
