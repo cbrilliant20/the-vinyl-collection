@@ -1,9 +1,9 @@
-import "./ProductDetail.css"
-import { useState, useEffect } from "react"
-import Layout from "../../components/Layout/Layout"
-import { getProduct, deleteProduct } from "../../services/products"
-import { useParams, Link } from "react-router-dom"
-import ModalBox from "../../components/ModalBox/ModalBox"
+import "./ProductDetail.css";
+import { useState, useEffect } from "react";
+import Layout from "../../components/Layout/Layout";
+import { getProduct, deleteProduct } from "../../services/products";
+import { useParams, Link } from "react-router-dom";
+import ModalBox from "../../components/ModalBox/ModalBox";
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -32,16 +32,19 @@ const ProductDetail = (props) => {
             src={product.imgURL}
             alt={product.album}
           />
-          
+
           <div className="detail">
             <div className="artist">{product.artist}</div>
             <div className="album">{product.album}</div>
-            <div className="tracks">
-              <b>
-                <em>Songs: </em>
-              </b>
-              {product.tracks}
+            <div className="songs">
+              {" "}
+              <u>
+                <b>
+                  <em>Songs: </em>
+                </b>
+              </u>
             </div>
+            <div className="tracks">{product.tracks}</div>
             <div className="genre">Genre : {product.genre}</div>
             <div className="year">Year Released : {product.year}</div>
             <div className="price">Price : {`$${product.price}`}</div>
