@@ -45,12 +45,12 @@ const ProductDetail = (props) => {
             <div className="genre">Genre : {product.genre}</div>
             <div className="year">Year Released : {product.year}</div>
             <div className="price">Price : {`$${product.price}`}</div>
+            <ModalBox product={product} />
             <Link className="edit-button" to={`/products/${product._id}/edit`}>
               <button className="edit-btn">Edit</button>
             </Link>
           </div>
         </div>
-        <ModalBox product={product} />
       </div>
     </Layout>
   );
