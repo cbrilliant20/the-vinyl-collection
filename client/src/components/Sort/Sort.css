@@ -7,3 +7,9 @@
 .sort {
   margin: 0 10px;
 }
+
+@media (max-width: 800px) {
+  .sort {
+    margin: 0;
+  }
+}

@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #121111 40%, #e0e4e6 40%);
-  width: 100vw;
+  width: 100%;
   overflow-y: scroll;
 }
 
@@ -33,6 +33,7 @@
   height: 40px;
   border: none;
   color: rgb(6, 6, 6);
+  padding: 0 10px;
 }
 
 /* ----------------------------- Buttons --------------------------------------------- */
@@ -65,6 +66,40 @@
 }
 
 .delete-button:hover {
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background: red;
+  filter: brightness(80%);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 800px) {
+  .edit-product-img {
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+  }
+
+  .productEditForm input {
+    font-size: 15px;
+    width: 300px;
+    margin-top: 20px;
+    background-color: rgba(240, 233, 233, 0.925);
+    height: 30px;
+    border: none;
+    color: rgb(6, 6, 6);
+    padding: 0 10px;
+  }
+  .save-button {
+    font-size: 12px;
+    padding: 2.5px;
+    margin-top: 20px;
+    width: 300px;
+    height: 25px;
+  }
+  .delete-button {
+    font-size: 12px;
+    padding: 2.5px;
+    margin-top: 20px;
+    width: 300px;
+    height: 25px;
+  }
 }

@@ -1,26 +1,26 @@
-import "./App.css"
-import Home from "./screens/Home/Home"
-import ProductCreate from "./screens/ProductCreate/ProductCreate"
-import ProductEdit from "./screens/ProductEdit/ProductEdit"
-import ProductDetail from "./screens/ProductDetail/ProductDetail"
-import SignUp from "./screens/SignUp/SignUp"
-import SignIn from "./screens/SignIn/SignIn"
-import SignOut from "./screens/SignOut/SignOut"
-import { verifyUser } from "./services/users"
-import Products from "./screens/Products/Products"
-import { useState, useEffect } from "react"
-import { Route, Switch, Redirect } from "react-router-dom"
+import "./App.css";
+import Home from "./screens/Home/Home";
+import ProductCreate from "./screens/ProductCreate/ProductCreate";
+import ProductEdit from "./screens/ProductEdit/ProductEdit";
+import ProductDetail from "./screens/ProductDetail/ProductDetail";
+import SignUp from "./screens/SignUp/SignUp";
+import SignIn from "./screens/SignIn/SignIn";
+import SignOut from "./screens/SignOut/SignOut";
+import { verifyUser } from "./services/users";
+import Products from "./screens/Products/Products";
+import { useState, useEffect } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 function App() {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
     const grabUser = async () => {
-      const user = await verifyUser()
-      user ? setUser(user) : setUser(null)
-    }
-    grabUser()
-  }, [])
+      const user = await verifyUser();
+      user ? setUser(user) : setUser(null);
+    };
+    grabUser();
+  }, []);
 
   return (
     <div className="App">
@@ -41,7 +41,7 @@ function App() {
           <SignOut setUser={setUser} />
         </Route>
         <Route exact path="/add-product">
-          {user ? <ProductCreate setUser={user} /> : <Redirect to="/sign-up" />}
+          {user ? <ProductCreate user={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route exact path="/products/:id/edit">
           {user ? <ProductEdit user={user} /> : <Redirect to="/" />}
@@ -51,7 +51,7 @@ function App() {
         </Route>
       </Switch>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,5 +1,5 @@
-import "./Product.css"
-import { Link } from "react-router-dom"
+import "./Product.css";
+import { Link } from "react-router-dom";
 
 const Product = (props) => {
   return (
@@ -10,9 +10,10 @@ const Product = (props) => {
       <div className="product-card-text">
         <p className="product-card-artist">{props.artist}</p>
         <div className="product-card-album">{props.album}</div>
+        <div className="product-card-tracks">{props.tracks}</div>
         <div className="product-card-genre">{props.genre}</div>
       </div>
     </div>
-  )
-}
-export default Product
+  );
+};
+export default Product;

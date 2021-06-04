@@ -6,19 +6,28 @@
   color: white;
   height: 70px;
   box-shadow: 0 5px 3px -2px gray;
-  font-size: 18px;
-  /* width: 100%; */
+  font-size: 22px;
+  width: 100%;
+}
+
+.nav a:hover {
+  filter: brightness(110%);
+  color: red;
+  border-bottom: none;
+  text-decoration: none;
 }
 
 .nav a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0 50px;
+  transition: 0.5s ease-in;
 }
 
 .links {
   display: flex;
-  width: 100%;
+  justify-content: space-evenly;
+  width: 70%;
 }
 
 .link-welcome {
@@ -26,6 +35,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  text-decoration: none;
 }
 
 .logo {
@@ -36,4 +46,41 @@
 .logo p {
   margin: 0 10px;
   font-size: 24px;
+}
+
+.username {
+  color: red;
+  border-bottom: 1px white solid;
+  text-transform: capitalize;
+}
+
+.welcome {
+  border-bottom: red solid 1px;
+}
+
+@media only screen and (max-width: 425px) {
+  .nav {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav a {
+    padding: 0;
+  }
+  .link-welcome {
+    display: none;
+  }
+  .logo p {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .icon {
+    margin: 0 5px 0 15px;
+  }
 }
