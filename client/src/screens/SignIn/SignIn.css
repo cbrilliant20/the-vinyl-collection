@@ -1,5 +1,6 @@
 .sign-in-container {
-  background-image: url("https://i.pinimg.com/originals/e7/84/4a/e7844a5194cd34bcf78c35a4662438a1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://i.pinimg.com/originals/e7/84/4a/e7844a5194cd34bcf78c35a4662438a1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 70px - 20px);
@@ -44,9 +45,10 @@ button {
   display: flex;
   flex-direction: column;
   padding-top: 10%;
+  color: white;
 }
 
-h4 {
+.sign-up {
   font-size: 24px;
   margin-bottom: -20px;
   color: white;
@@ -63,6 +65,17 @@ button:hover {
   background-color: rgb(255, 255, 255);
   color: black;
 }
+
+@media (max-width: 800px) {
+  .sign-in-container input {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  button {
+    width: 300px;
+    font-size: 16px;
+  }
 
 #sign-up-button:hover {
   background: red;
