@@ -77,7 +77,8 @@ button:hover {
     font-size: 16px;
   }
 
-#sign-up-button:hover {
-  background: red;
-  color: white;
+  #sign-up-button:hover {
+    background: red;
+    color: white;
+  }
 }
