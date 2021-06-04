@@ -66,6 +66,17 @@ button:hover {
   color: black;
 }
 
+@media (max-width: 800px) {
+  .sign-in-container input {
+    width: 300px;
+    font-size: 16px;
+  }
+
+  button {
+    width: 300px;
+    font-size: 16px;
+  }
+
 #sign-up-button:hover {
   background: red;
   color: white;
