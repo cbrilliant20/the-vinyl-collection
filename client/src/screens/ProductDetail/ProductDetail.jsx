@@ -1,26 +1,26 @@
-import "./ProductDetail.css"
-import { useState, useEffect } from "react"
-import RelatedProducts from "../../components/RelatedProducts/RelatedProducts"
-import Layout from "../../components/Layout/Layout"
-import { getProduct, deleteProduct } from "../../services/products"
-import { useParams, Link } from "react-router-dom"
+import "./ProductDetail.css";
+import { useState, useEffect } from "react";
+import RelatedProducts from "../../components/RelatedProducts/RelatedProducts";
+import Layout from "../../components/Layout/Layout";
+import { getProduct, deleteProduct } from "../../services/products";
+import { useParams, Link } from "react-router-dom";
 
 const ProductDetail = (props) => {
-  const [product, setProduct] = useState(null)
-  const [isLoaded, setLoaded] = useState(false)
-  const { id } = useParams()
+  const [product, setProduct] = useState(null);
+  const [isLoaded, setLoaded] = useState(false);
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const product = await getProduct(id)
-      setProduct(product)
-      setLoaded(true)
-    }
-    fetchProduct()
-  }, [id])
+      const product = await getProduct(id);
+      setProduct(product);
+      setLoaded(true);
+    };
+    fetchProduct();
+  }, [id]);
 
   if (!isLoaded) {
-    return <h1>Loading In Progress...</h1>
+    return <h1>Loading In Progress...</h1>;
   }
 
   return (
@@ -36,6 +36,12 @@ const ProductDetail = (props) => {
           <div className="detail">
             <div className="artist">{product.artist}</div>
             <div className="album">{product.album}</div>
+            <div className="tracks">
+              <b>
+                <em>Songs: </em>
+              </b>
+              {product.tracks}
+            </div>
             <div className="genre">Genre : {product.genre}</div>
             <div className="year">Year Released : {product.year}</div>
             <div className="price">Price : {`$${product.price}`}</div>
@@ -47,7 +53,7 @@ const ProductDetail = (props) => {
         <RelatedProducts product={product} />
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default ProductDetail
+export default ProductDetail;
