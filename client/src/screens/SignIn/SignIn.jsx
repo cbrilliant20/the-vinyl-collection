@@ -48,7 +48,11 @@ const SignIn = (props) => {
         </button>
       );
     } else {
-      return <button type="submit">Sign In</button>;
+      return (
+        <button type="submit" className="sign-in">
+          Sign In
+        </button>
+      );
     }
   };
 
@@ -79,11 +83,11 @@ const SignIn = (props) => {
               onChange={handleChange}
             />
             {renderError()}
-            <h4>Need An Account?</h4>
-            <Link to="/sign-up">
-              <button id="sign-up-button">Sign Up Here</button>
-            </Link>
           </form>
+          <h4 className="sign-up">Need An Account?</h4>
+          <Link to="/sign-up">
+            <button id="sign-up-button">Sign Up Here</button>
+          </Link>
         </div>
       </div>
     </Layout>
