@@ -33,6 +33,7 @@
   height: 40px;
   border: none;
   color: rgb(6, 6, 6);
+  padding: 0 10px;
 }
 
 /* ----------------------------- Buttons --------------------------------------------- */
@@ -65,6 +66,6 @@
 }
 
 .delete-button:hover {
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background: red;
+  color: rgb(255, 255, 255);
 }
