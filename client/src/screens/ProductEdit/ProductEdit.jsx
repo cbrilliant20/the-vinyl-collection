@@ -15,6 +15,7 @@ const ProductEdit = (props) => {
     imgURL: "",
     artist: "",
     album: "",
+    tracks: "",
     genre: "",
     year: "",
     price: "",
@@ -82,6 +83,16 @@ const ProductEdit = (props) => {
             placeholder="Album Name"
             value={product.album}
             name="album"
+            required
+            autoFocus
+            onChange={handleChange}
+          />
+
+          <input
+            className="input-tracks"
+            placeholder="Name Of Tracks"
+            value={product.album}
+            name="tracks"
             required
             autoFocus
             onChange={handleChange}
